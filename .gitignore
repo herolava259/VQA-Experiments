@@ -60,3 +60,5 @@ target/
 maildir
 
 ./lab/venv/
+.venv/
+/lab/venv/Scripts/pythonw.exe
