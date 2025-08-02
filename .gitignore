@@ -69,3 +69,10 @@ todo.txt
 /lab/.idea
 /lab/.idea
 /lab/.idea/inspectionProfiles/Project_Default.xml
+/lab/.idea/inspectionProfiles/Project_Default.xml
+/lab/.idea/inspectionProfiles/profiles_settings.xml
+/lab/.idea/lab.iml
+/lab/.idea/misc.xml
+/lab/.idea/modules.xml
+/lab/.idea/vcs.xml
+/lab/airflow/.env
