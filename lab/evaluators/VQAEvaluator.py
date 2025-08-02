@@ -1,11 +1,12 @@
-from typing import Type, List, Dict, Union, Lieteral, Callable, Any
-from abc import ABC, abstracmethod
+from typing import Type, List, Dict, Union, Literal, Callable, Any
+from abc import ABC, abstractmethod
 from evaluate import load as load_metric
 
 class VQAMetric(ABC):
     metric_name: str = "Bleu"
     description: str = "A metric for evaluating the quality of answers in Visual Question Answering tasks."
-    @abstracmethod
+
+    @abstractmethod
     def evaluate(self, reference: Union[str, List[str]], prediction: Union[str, List[str]], **kwargs)-> Dict[str, float]:
         pass 
 

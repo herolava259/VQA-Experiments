@@ -63,4 +63,9 @@ maildir
 .venv/
 /lab/venv/Scripts/pythonw.exe
 todo.txt
-./.idea
+*.idea
+*.minio.sys
+*.env
+/lab/.idea
+/lab/.idea
+/lab/.idea/inspectionProfiles/Project_Default.xml

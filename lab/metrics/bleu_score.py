@@ -1,5 +1,6 @@
 from nltk.util import ngrams
 from collections import Counter
+import numpy as np
 
 def brevity_penalty(reference, candidate):
     ref_length = len(reference)

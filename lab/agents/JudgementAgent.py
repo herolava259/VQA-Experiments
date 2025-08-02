@@ -1,7 +1,6 @@
 from google import genai 
 import os
 from pydantic import BaseModel, Field
-import os 
 
 class ScoreResult(BaseModel):
   score: int = Field(...)
@@ -16,7 +15,7 @@ class GeminiJudgementAgent:
     self.model_type = model_type
     self.gemini_llm_client =  genai.Client(api_key=api_key)
   
-  def __excute__(self, context, question, answer, reference_answer):
+  def __call__(self, context, question, answer, reference_answer):
     formatted_prompt = self.judgement_prompt.format(context=context, question=question, answer=answer, reference_answer=reference_answer)
     response = self.gemini_llm_client.models.generate_content(
       model=self.model_type,

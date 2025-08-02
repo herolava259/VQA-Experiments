@@ -30,7 +30,8 @@
 - [5CD-AI/Viet-Receipt-VQA (Vietnamese)](https://huggingface.co/datasets/5CD-AI/Viet-Receipt-VQA)
 
 ## V. Notebook
-- [Link here](https://colab.research.google.com/drive/1OH4CgqsChrjU-pBz8t9MsSzbv-CbyhLb?authuser=1&hl=vi#scrollTo=Q_7tq1lxqciX)
+- [Experiment](https://colab.research.google.com/drive/1OH4CgqsChrjU-pBz8t9MsSzbv-CbyhLb?authuser=1&hl=vi#scrollTo=Q_7tq1lxqciX)
+- [Visualization-Result](https://colab.research.google.com/drive/1sFMPboLVANHL8SQkcygRxDylewMF1ay-?hl=vi#scrollTo=zaprZKUbJDvP)
 
 ## Latest: Tools for Running Experiments
 
