@@ -76,3 +76,5 @@ todo.txt
 /lab/.idea/modules.xml
 /lab/.idea/vcs.xml
 /lab/airflow/.env
+/lab/mlflow/datasets/V2-20250802T094004Z-1-001.zip
+/lab/mlflow/notebooks/vqa-custom-dataset
