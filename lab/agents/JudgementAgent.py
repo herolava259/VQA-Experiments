@@ -2,9 +2,8 @@ from google import genai
 import os
 from pydantic import BaseModel, Field
 
-class ScoreResult(BaseModel):
-  score: int = Field(...)
-  judgement: str = Field(...)
+from lab.prompts.judgement_prompts import JUDGE_PROMPT
+from lab.utilties.ScoreResult import ScoreResult
 
 
 class GeminiJudgementAgent:
@@ -14,8 +13,8 @@ class GeminiJudgementAgent:
     self.judgement_prompt = JUDGE_PROMPT
     self.model_type = model_type
     self.gemini_llm_client =  genai.Client(api_key=api_key)
-  
-  def __call__(self, context, question, answer, reference_answer):
+
+  def __excute__(self, context, question, answer, reference_answer):
     formatted_prompt = self.judgement_prompt.format(context=context, question=question, answer=answer, reference_answer=reference_answer)
     response = self.gemini_llm_client.models.generate_content(
       model=self.model_type,
